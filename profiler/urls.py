@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import *
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns(
     'profiler.views',
@@ -7,4 +7,3 @@ urlpatterns = patterns(
     url(r'^code/$', 'python_stats', name='profiler_python_stats'),
     url(r'^reset/$', 'reset', name='profiler_reset'),
     )
-
